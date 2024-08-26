@@ -1,21 +1,21 @@
-const Sequelize = require('sequelize')
-const db = require('../db')
+const Sequelize = require('sequelize');
+const db = require('../db');  // Certifique-se de ajustar o caminho conforme necessário
 
-const Produto = db.define('produto', {
-    id:{
+const Produto = db.define('Produto', {
+    id: {
         type: Sequelize.INTEGER,
-        autoIncremente: true,
-        allowNull: false,
-        primaryKey: true
+        autoIncrement: true,  // O campo será autoincrementado
+        primaryKey: true,     // O campo será a chave primária
+        allowNull: false      // O campo não pode ser nulo
     },
     nome: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false      // O campo não pode ser nulo
     },
     quantidade: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false      // O campo não pode ser nulo
     }
-})
+});
 
-module.exports = Produto
+module.exports = Produto;
