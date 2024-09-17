@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "page page"
+        "footer footer"
+    ;
+}
+
+
+.main{
+
+grid-area: page;
+flex-direction: column;
+
+
+}
+
+
+.wellcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-image:  linear-gradient(rgba(255, 0, 0, 0) , rgb(0, 0, 0) ), url("./../../../img/Sea.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+    
+
+}
+.wellcome_box{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    color:#093028;
+
+  
+} 
+.wellcome_box h3{
+    color: #ffffff;
+} 
+
+.wellcome_box h1{
+    color: #ffffff;
+}
+.wellcome_box p{
+    
+    font-size: 17px;
+    color: #ffffff;
+}
+.button_branco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #00aeff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5%;
+    color: #fff;
+    margin: 10px;
+}
+/* -------------------- */
+
+/* Page 1  */
+.sub_page{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.863);
+    margin: 10px;
+    box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
+    width: 100%;
+    flex-wrap: wrap;
+}
+.sub_page_box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 70%;
+    background-color: #ffffff;
+   
+}
+.sub_page_box_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;  
+    width: 30%;
+  
+}
+.sub_page_box_2 h2{
+    color: #0076ad;
+    margin: 10px; 
+    font-size: 25px;
+
+}
+.sub_page_box_2_2{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+   
+}
+/* Box das denunicas */
+.min_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px   rgba(0, 0, 0, 0.863);
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.min_box:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    box-shadow: 1px 1px 10px  #00701c;
+    cursor: pointer;    
+}
+.min_box img {
+    width: 95%;
+    height: 120px;
+    border-radius: 10px;
+}
+.min_box h1{
+    color: #00ad1d;
+    font-size: 20px;
+}
