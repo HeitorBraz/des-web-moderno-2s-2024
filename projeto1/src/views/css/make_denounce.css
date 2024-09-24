@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 60px 2fr 60px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "page page"
+        "footer footer"
+    ;
+}
+
+
+.main{
+
+grid-area: page;
+
+
+}
+/* Page 1  */
+.page{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    background-color: #093028;
+   
+}
+.box_denuncia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px  #000000;
+    background-color: #fff;
+   
+}
+.mid_box_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+    height: 100%;
+    margin:20px;
+    
+    
+   
+  
+}
+.mid_box_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%; height: 100%;
+    border-radius: 0px 10px  10px 0px;
+    box-shadow: 1px 1px 10px #000000;
+    background-color: #093028;
+    padding: 10px;
+    color: #fff;
+    
+    
+}
+/* /////////box1/////////// */
+.div_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div_input label{
+    color:#093028;
+}
+
+.op{
+    width: 215px;
+    height: 32px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid #00ccff;
+    color:#093028;
+    padding: .300rem .400rem;
+}
+.input{
+    width: 200px;
+    height: 20px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid #00ccff;
+    color:#093028;
+    padding: .300rem .400rem;
+}
+label{
+    color:#00ccff;
+    font-size: 20px;
+}
+
+.bnt{
+    background-color: #00ccff;
+    color:#ffffff;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    box-shadow:1px 1px 10px #093028;
+}
+.from_button:hover{
+    background-color: #00ad1d;
+    color:#ffffff;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+
+
+}
+.input_d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.erro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 35px;
+    background-color:rgb(236, 87, 87);
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid #ff0000;
+    color:#000000;
+}
+/* //////////////////box2///////////////////// */
+
+
+
+/* ////////////////////////footer////////////////////// */
+
+
+
